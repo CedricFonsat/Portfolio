@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/cv_add_project.css">
+		<title>Ajouter projet</title>
+	</head>
+	<body>
+		<section>
+			<h1>Ajouter un projet</h1>
+			<form action="/admin_add_project" method="post" enctype="multipart/form-data">
+				<input name="title" type="text" placeholder="Titre du projet">
+				<input name="subtitle" type="text" placeholder="Sous titre du projet">
+				<textarea name="description" id="" placeholder="Description du projet" cols="30" rows="10"></textarea>
+				<input name="link" type="text">
+				<div>
+					<label for="image">Inserer image du projet</label>
+					<input type="file" name="image" id="image">
+				</div>
+				<button type="submit">Ajouter projet</button>
+			</form>
+			<a href="/admin">retourner a la page admin</a>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161822;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    width: 500px;
+    height: 550px;
+    background-color: #2C2F3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+form button{
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+form div{
+    width: 320px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+form div input{
+    display: none;
+}
+form textarea{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+a{
+    color: white;
+    margin-top: 10px;
+}

@@ -1,0 +1,17 @@
+<section id="project">
+	{% for project in project %}
+
+		<div>
+			<h2>{{project.title}}
+			</h2>
+			{% if project.img == "blank.png" %}
+				<img src="./img/blank.jpeg" alt="image projet">
+			{% else %}
+				<img src="./uploads/images/{{project.img}}" alt="image projet">
+			{% endif %}
+		</div>
+	{% endfor %}
+</section>
+<div id="link_all_project">
+	<a href="/portfolio">voir tout les projets</a>
+</div>

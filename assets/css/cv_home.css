@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Dahlia';
+    src: url('../fonts/Dahlia\ Regictik.ttf');
+  }
+@font-face {
+    font-family: 'PlayFair';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+  }  
+  @font-face {
+    font-family: 'NewYork';
+    src: url('../fonts/NewYork.otf');
+  }  
+  @font-face {
+    font-family: 'Abril';
+    src: url('../fonts/AbrilFatface-Regular.ttf');
+  }  
+
+/* cv rules  */
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #161822;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* cv home  */
+
+#home{
+color: white;
+position: relative;
+width: 100%;
+height: 100vh;
+}
+#home_article{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -99;
+}
+h1{
+    font-family: 'helvetica';
+    font-size: 20vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 18vh;
+}
+/* iframe{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+} */
+/* .spline-watermark{
+    background-image: none !important;
+} */
+
+/* cv mark scroll */
+
+#scroll{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+#scroll p{
+    font-family: 'Dahlia';
+}
+#scroll span{
+    height: 6vh;
+    width: .1vw;
+    background-color: white;
+}
+
+/* cv transition entre home et about */
+
+#transition_text{
+    display:flex;
+    align-items:center;
+    font-family:sans-serif;
+    flex-direction:column;
+    height:30vh;
+    font-size:4rem;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: #161822;
+    animation: fill 0.5s infinite alternate;
+    background-color: #161822;
+    width:100vw;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    justify-content:center;
+  }
+  
+  .l{
+    width:fit-content;
+    white-space:nowrap;
+    animation: example 10s linear 0.5s infinite;
+  }
+  .r{
+    width:fit-content;
+    white-space:nowrap;
+    animation: example2 10s linear 0.5s infinite;
+    -webkit-text-fill-color: white;
+  }
+  
+  @keyframes example2 {
+    0% {      
+      margin-right:0%;
+      opacity:0%;
+   }
+    10%{
+      opacity:100%;
+    }
+    90%{
+      opacity:100%;
+    }
+    100% {
+      margin-right:-100%;
+      opacity:0%;
+   }
+  }
+  @keyframes example {
+    0% {      
+      margin-left:0%;
+      opacity:0%;
+   }
+    10%{
+      opacity:100%;
+    }
+    90%{
+      opacity:100%;
+    }
+    100% {
+      margin-left:-100%;
+      opacity:0%;
+   }
+  }
+
+/* cv about */
+
+#about{
+    background-color: #161822;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about h2{
+    font-size: 6vh;
+    margin-bottom: 20px;
+}
+#about p{
+    font-size: 3vh;
+    width: 70%;
+    text-align: center;
+}
+#about a{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2D2D3C;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* cv me contacter */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+
+}
+#contact h2{
+    font-size: 6vh;
+    margin-bottom: 5vh;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2f3e;
+    padding: 20px;
+    width: 60vw;
+    height: 50vh;
+}
+#contact form input{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    width: 60%;
+    height: 4vh;
+    margin-bottom: 3vh;
+    padding: 5px 8px;
+}
+#contact form input::placeholder{
+    color: white;
+}
+#contact form button{
+    width: 60%;
+    height: 4vh;
+    border: none;
+    background-color: white;
+}
+
+
+/* cv footer */
+
+footer{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a{
+  color: white;
+}
+footer p{
+  margin-left: 10px;
+}

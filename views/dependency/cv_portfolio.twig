@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/cv_portfolio.css">
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<img src="./img/arrow.png" alt="">
+				<a href="/">Retour</a>
+			</div>
+		</header>
+		<h1>Portfolio</h1>
+		<section>
+			{% for project in project %}
+				<article>
+					<h3>{{project.title}}</h3>
+					<h4>{{project.subtitle}}</h4>
+					<div id="image">
+						{% if project.img == "blank.png" %}
+							<img src="./img/blank.jpeg" alt="image projet">
+						{% else %}
+							<img src="./uploads/images/{{project.img}}" alt="image projet">
+						{% endif %}
+					</div>
+					<p>{{project.description}}</p>
+					<span>
+						<a target="_blank" href="{{project.link}}">Lien Github</a>
+					</span>
+				</article>
+			{% endfor %}
+		</section>
+	</body>
+</html>

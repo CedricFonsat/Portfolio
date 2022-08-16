@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/cv_update_project.css">
+		<title>Modifier projet</title>
+	</head>
+	<body>
+		<section>
+			<h1>Modifier projet</h1>
+			<form action="/admin_update_project/{{project.id}}" method="post">
+				<input name="title" value="{{project.title}}" type="text" placeholder="Titre du projet">
+				<input name="subtitle" value="{{project.subtitle}}" type="text" placeholder="Sous titre du projet">
+				<input name="link" value="{{project.link}}" type="text">
+				<button type="submit">Modifier projet</button>
+			</form>
+			<a href="/admin">retourner a la page admin</a>
+		</section>
+	</body>
+</html>

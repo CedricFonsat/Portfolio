@@ -1,0 +1,76 @@
+#experience{
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: #161822;
+    margin-bottom: 15vh;
+}
+#experience article{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2D2E3C;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    overflow-y: hidden;
+}
+#experience article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#experience article div h4{
+    text-align: center;
+}
+#experience article div h5{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+#experience article div img{
+    width: 80%;
+}
+
+/* cv experience hover card */
+
+#content_card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 350px;
+    right: 0;
+    z-index: 1;
+    background-color: #2D2E3C;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    font-size: 3vh;
+    box-shadow: -12px -129px 80px -64px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: -12px -129px 80px -64px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: -12px -129px 80px -64px rgba(0,0,0,0.75) inset;
+transition: top 1s, linear ease-in-out;
+}
+#content_card p{
+    margin: 5px 0;
+    text-align: center;
+}
+#card_date{
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #2D2E3C;
+    width: 150px;
+}
+#experience article:hover #content_card{
+    top: 0px;
+}
+
