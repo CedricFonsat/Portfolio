@@ -45,12 +45,15 @@ height: 100vh;
     position: absolute;
     z-index: -99;
 }
-h1{
+#title_name{
     font-family: 'helvetica';
     font-size: 20vh;
     display: flex;
     flex-direction: column;
     line-height: 18vh;
+}
+.none{
+  display: none;
 }
 /* iframe{
     width: 100%;
@@ -70,7 +73,7 @@ h1{
     align-items: center;
     position: absolute;
     bottom: 0;
-    right: 50%;
+    transform: translate(0%);
 }
 #scroll p{
     font-family: 'Dahlia';
